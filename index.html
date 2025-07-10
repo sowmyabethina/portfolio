@@ -4,123 +4,382 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bethina Sowmya Sri Durga - Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
   <div class="container">
-    <a class="navbar-brand" href="#">Sowmya's Portfolio</a>
+    <a class="navbar-brand fw-bold" href="#">Sowmya's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#techstack">Tech Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+       <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+      </ul>
+    </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="bg-light py-5 text-center">
+<!-- About Section -->
+<section class="bg-light py-5 text-center" id="about" data-aos="fade-up">
   <div class="container">
+    <img src="sowmya photo.jpg" alt="Sowmya Profile" class="rounded-circle mb-3 shadow" width="140" height="140">
     <h1 class="display-5 fw-bold">Bethina Sowmya Sri Durga</h1>
-    <p class="lead">Aspiring Full Stack Developer | MERN Stack Learner</p>
-    <p>Velpuru, West Godavari, Andhra Pradesh | +91 6281487618 | <a href="mailto:sowmyabethina@gmail.com">sowmyabethina@gmail.com</a></p>
-    <a href="https://www.linkedin.com/in/sowmya-bethina-b74844306/" target="_blank" class="btn btn-primary mt-2">LinkedIn Profile</a>
-    <a href="Resume_Bethina_Sowmya_Sri_Durga.pdf" download class="btn btn-outline-secondary mt-2 ms-2">Download Resume</a>
+    <p class="lead text-muted">Full Stack Developer | MERN Stack Enthusiast</p>
+
+    <div class="d-flex justify-content-center flex-wrap gap-3 mb-3">
+      <div><i class="bi bi-geo-alt-fill me-1 text-primary"></i>Velpuru, West Godavari, AP</div>
+      <div><i class="bi bi-telephone-fill me-1 text-primary"></i>+91 62814 87618</div>
+      <div><i class="bi bi-envelope-fill me-1 text-primary"></i><a href="mailto:sowmyabethina@gmail.com" class="text-decoration-none">sowmyabethina@gmail.com</a></div>
+    </div>
+
+    <div class="mb-3">
+      <a href="https://www.linkedin.com/in/sowmya-bethina-b74844306/" target="_blank" class="btn btn-primary me-2">LinkedIn</a>
+      <a href="Bethina Sowmya Sri Durga.pdf" download class="btn btn-outline-secondary">Download Resume</a>
+    </div>
+
+    <p class="mt-3 px-4">
+      I'm a passionate and driven developer with a foundation in computer science and hands-on experience in modern web technologies. I enjoy building scalable full-stack applications using the MERN stack and cloud tools. Always curious, always learning.
+    </p>
   </div>
 </section>
 
 
-<!-- Education Section -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-4">Education</h2>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <strong>Sasi Institute of Technology and Engineering</strong> – BTech in Computer Science and Technology (8.8 CGPA)
-      </li>
-      <li class="list-group-item">
-        <strong>S. M. V. M Polytechnic, Tanuku</strong> – Diploma in ECE (94%)
-      </li>
-      <li class="list-group-item">
-        <strong>Z.P. High School, Velpuru</strong> – SSC (9.7 GPA)
-      </li>
-    </ul>
-  </div>
-</section>
 
-<!-- Skills Section -->
-<section class="bg-light py-5">
+<!-- Tech Stack Section -->
+<section class="bg-light py-5 text-center" id="techstack" data-aos="fade-up">
   <div class="container">
-    <h2 class="mb-4">Skills</h2>
-    <div class="row">
-      <div class="col-md-4"><strong>Languages:</strong> C, Python, Java</div>
-      <div class="col-md-4"><strong>Frontend:</strong> HTML, CSS, JavaScript, ReactJs</div>
-      <div class="col-md-4"><strong>Backend:</strong> NodeJs, ExpressJs</div>
-      <div class="col-md-4"><strong>Databases:</strong> MongoDB, MySQL</div>
+    <h2 class="mb-4">Tech Stack</h2>
+    <div class="row text-center g-4 justify-content-center">
+
+      <!-- Each tech -->
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" alt="HTML">
+        <p class="mt-2 small">HTML5</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" alt="CSS">
+        <p class="mt-2 small">CSS3</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" alt="JavaScript">
+        <p class="mt-2 small">JavaScript</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" alt="React">
+        <p class="mt-2 small">React</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="50" alt="Node.js">
+        <p class="mt-2 small">Node.js</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="50" alt="Express">
+        <p class="mt-2 small">Express</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="50" alt="MongoDB">
+        <p class="mt-2 small">MongoDB</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50" alt="MySQL">
+        <p class="mt-2 small">MySQL</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" alt="Java">
+        <p class="mt-2 small">Java</p>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" alt="Python">
+        <p class="mt-2 small">Python</p>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- Projects Section -->
-<section class="py-5">
+<!-- Education Section -->
+<section class="bg-light py-5 text-center" id="education" data-aos="fade-up">
   <div class="container">
-    <h2 class="mb-4">Projects</h2>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Movie Search App</h5>
-        <p class="card-text">A React-based app that lets users search for movies using the OMDb API. It displays titles, posters, and release years dynamically.</p>
+    <h2 class="mb-4">Education</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <h5 class="text-primary">B.Tech in CSE</h5>
+          <p class="mb-1"><strong>Sasi Institute of Technology and Engineering</strong></p>
+          <p class="mb-1">2023 – 2026</p>
+          <p class="mb-0">CGPA: 8.8</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <h5 class="text-success">Diploma in ECE</h5>
+          <p class="mb-1"><strong>S.M.V.M Polytechnic, Tanuku</strong></p>
+          <p class="mb-1">2019 – 2022</p>
+          <p class="mb-0">GPA: 9.8</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 p-3">
+          <h5 class="text-warning">SSC</h5>
+          <p class="mb-1"><strong>Z.P. High School, Velpuru</strong></p>
+          <p class="mb-1">2019</p>
+          <p class="mb-0">GPA: 9.7</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="bg-light py-5 text-center" id="skills" data-aos="fade-up">
+  <div class="container">
+    <h2 class="mb-4">Skills</h2>
+    <div class="row g-4">
+
+      <!-- Languages -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <h5 class="text-primary mb-3"><i class="bi bi-terminal me-2"></i>Programming Languages</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">C</span>
+            <span class="badge bg-secondary">Python</span>
+            <span class="badge bg-secondary">Java</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <h5 class="text-success mb-3"><i class="bi bi-window me-2"></i>Frontend Development</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-success">HTML5</span>
+            <span class="badge bg-success">CSS3</span>
+            <span class="badge bg-success">JavaScript</span>
+            <span class="badge bg-success">React.js</span>
+            <span class="badge bg-success">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <h5 class="text-warning mb-3"><i class="bi bi-hdd-network me-2"></i>Backend Development</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-warning text-dark">Node.js</span>
+            <span class="badge bg-warning text-dark">Express.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <h5 class="text-info mb-3"><i class="bi bi-database me-2"></i>Databases</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-info text-dark">MongoDB</span>
+            <span class="badge bg-info text-dark">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm p-3 h-100">
+          <h5 class="text-dark mb-3"><i class="bi bi-tools me-2"></i>Tools & Platforms</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-dark">Git</span>
+            <span class="badge bg-dark">GitHub</span>
+            <span class="badge bg-dark">VS Code</span>
+            <span class="badge bg-dark">Vercel</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="bg-light py-5 text-center" id="certifications" data-aos="fade-up">
+  <div class="container">
+    <h2 class="mb-4">Certifications</h2>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4">
+        <a href="https://www.hackerrank.com/certificates/1ff4ac450512" target="_blank" class="btn btn-outline-success w-100">
+          Python - HackerRank
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="https://www.hackerrank.com/certificates/iframe/2ba0fb8eb26a" target="_blank" class="btn btn-outline-success w-100">
+          Java - HackerRank
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="https://courses.edx.org/certificates/4c679cd2184bd3380fa49b0b46f02e4d" target="_blank" class="btn btn-outline-primary w-100">
+          HTML5 & CSS Fundamentals - edX
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="https://courses.edx.org/certificates/59573dd8102042bb7490125c097308e" target="_blank" class="btn btn-outline-primary w-100">
+          JavaScript Basics - edX
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="https://courses.edx.org/certificates/f4921ff67a54481297eeeb65278504c1" target="_blank" class="btn btn-outline-primary w-100">
+          Git & GitHub - edX
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="https://courses.edx.org/certificates/32538867f7e044e8812502cc152c8037" target="_blank" class="btn btn-outline-primary w-100">
+          MongoDB CRUD - edX
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Internship Section -->
-<section class="bg-light py-5">
+
+<!-- Projects Section -->
+<section class="py-5" id="projects">
   <div class="container">
-    <h2 class="mb-4">Internships</h2>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <strong>Web Developer at TechnoHacks</strong><br>
-        Developed responsive websites using HTML, CSS, and JavaScript.
-      </li>
-      <li class="list-group-item">
-        <strong>AWS Cloud Virtual Internship</strong><br>
-        Worked with cloud platforms (AWS & Azure) and explored VMs, storage, and cloud tools.
-      </li>
-    </ul>
+    <h2 class="mb-4">Projects</h2>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">DocSpot – Appointment Booking App</h5>
+            <p class="card-text mb-2">A full-stack MERN application where patients can book doctor appointments.</p>
+            <ul class="text-start d-inline-block">
+              <li>Implemented login, dashboard, and filtering using React & Express.</li>
+              <li>Connected to MongoDB and deployed frontend on Vercel.</li>
+            </ul>
+            <div class="mt-3">
+              <a href="https://vercel.com/bethina-sowmya-sri-durgas-projects/doc-spot/GXHyeU1xQy769cQDGdNCp6sLhs2d" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+              <a href="https://github.com/sowmyabethina/DocSpot" target="_blank" class="btn btn-sm btn-outline-dark ms-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-bold">Movie Search App</h5>
+            <p class="card-text mb-2">A React app that searches and displays movies using the OMDb API.</p>
+            <ul class="text-start d-inline-block">
+              <li>Dynamic search with debouncing and error handling.</li>
+              <li>Bootstrap styled responsive UI. Deployed on Netlify.</li>
+            </ul>
+            <div class="mt-3">
+              <a href="https://movie-search-4m2a1ynn1-bethina-sowmya-sri-durgas-projects.vercel.app" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+              <a href="https://github.com/sowmyabethina/movie-search-app" target="_blank" class="btn btn-sm btn-outline-dark ms-2">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- Certifications -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="mb-4">Certifications</h2>
-    <ul>
-      <li><a href="https://www.hackerrank.com/certificates/1ff4ac450512" target="_blank">Python (HackerRank)</a></li>
-      <li><a href="https://www.hackerrank.com/certificates/iframe/2ba0fb8eb26a" target="_blank">Java (HackerRank)</a></li>
-      <li><a href="https://courses.edx.org/certificates/4c679cd2184bd3380fa49b0b46f02e4d" target="_blank">HTML5 & CSS Fundamentals (edX)</a></li>
-      <li><a href="https://courses.edx.org/certificates/59573dd8102042bb7490125c097308e" target="_blank">JavaScript Basics (edX)</a></li>
-      <li><a href="https://courses.edx.org/certificates/f4921ff67a54481297eeeb65278504c1" target="_blank">Git and GitHub (edX)</a></li>
-      <li><a href="https://courses.edx.org/certificates/32538867f7e044e8812502cc152c8037" target="_blank">MongoDB CRUD Operations (edX)</a></li>
-    </ul>
-  </div>
-</section>
 
-<!-- Achievements Section -->
-<section class="bg-light py-5">
+<!-- Contact Section 
+<section class="bg-light py-5 text-center" id="contact" data-aos="fade-up">
   <div class="container">
-    <h2 class="mb-4">Achievements</h2>
-    <ul>
-      <li><a href="https://www.codechef.com/users/sowmyabethina" target="_blank">CodeChef Profile</a></li>
-      <li><a href="https://www.hackerrank.com/profile/sowmya_bethina" target="_blank">HackerRank Profile</a></li>
-    </ul>
+    <h2 class="mb-4">Contact Me</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
   </div>
 </section>
+-->
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
   <div class="container">
+    <div class="mb-2">
+      <a href="https://github.com/sowmyabethina" target="_blank" class="text-white me-3"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/sowmya-bethina-b74844306/" target="_blank" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:sowmyabethina@gmail.com" class="text-white"><i class="bi bi-envelope"></i></a>
+    </div>
     &copy; 2025 Bethina Sowmya Sri Durga. All rights reserved.
   </div>
 </footer>
 
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS Library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  function revealSections() {
+    const triggerPoint = window.scrollY + window.innerHeight;
+    sections.forEach((section) => {
+      if (triggerPoint > section.offsetTop + 100) {
+        section.classList.add("visible");
+      }
+    });
+  }
+  window.addEventListener("scroll", revealSections);
+  revealSections();
+});
+</script>
+
 </body>
 </html>
